@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+  <title>Browser Keyboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="libs/superhero.css" rel="stylesheet">
+  <link rel="stylesheet" href="libs/resslider/responsiveslides.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Browser Keyboard</h1>
+      <p>Расширение виртуальная клавитура для Firefox и Chrome.</p>
+      <p><a class="btn btn-primary info btn-lg" href="https://github.com/browser-keyboard/keyboard">Перейти на GitHub</a></p>
+      <p><a class="btn btn-primary info btn-lg" href="demo/index.html">Demo</a></p>
+    </div>
+    <div class="rslides_container">
+      <ul class="rslides" id='slider'>
+	<li><img src="images/1.png" alt=""></li>
+	<li><img src="images/2.png" alt=""></li>
+	<li><img src="images/3.png" alt=""></li>
+      </ul>
+    </div>
+  <h1>Возможности</h1>
+    <div class="list-group">
+      <a " class="list-group-item"><h4 class="list-group-item-heading">перехват нажатий на физические клавиши и печать соответствуешего символа</h4></a>
+      <a " class="list-group-item"><h4 class="list-group-item-heading">печать текста с помощью на экраной клавиатуры</h4></a>
+      <a " class="list-group-item"><h4 class="list-group-item-heading">выбор разных языков вне зависимости от системных настроек</h4></a>
+      <a " class="list-group-item"><h4 class="list-group-item-heading">скрытие/"позание" наэкранной клавиатуры, при этом перехват клавиш будет продолжать работать</h4></a>
+      <a " class="list-group-item"><h4 class="list-group-item-heading">отключение/включение перехвата клавиш</h4></a>
+      <a " class="list-group-item"><h4 class="list-group-item-heading">при перенастройки раскладки, список языков скачивается из сервера через AJAX</h4></a>
+      <a " class="list-group-item"><h4 class="list-group-item-heading">прописные, строчные, дополнительные прописные и дополнительные строчные наборы символов</h4></a>
+      <a " class="list-group-item"><h4 class="list-group-item-heading">меню на строке браузера:</h4>
+	<p class="list-group-item-text">вкл/выкл виртуальной клавиаты</p>
+	<p class="list-group-item-text">вкл/выкл наэкранной клавиатуры</p>
+	<p class="list-group-item-text">изменить текуший язык</p>
+      </a>
+      <a " class="list-group-item"><h4 class="list-group-item-heading">горячие клавиши:</h4>
+	<p class="list-group-item-text">ctrl+k — вкл/выкл виртуальной клавиаты</p>
+	<p class="list-group-item-text">shift</p>
+	<p class="list-group-item-text">caps lock</p>
+	<p class="list-group-item-text">ctrl + alt — shift-подобное переключение на дополнительные символы</p>
+	<p class="list-group-item-text">ctrl + alt + пробел — caps-подобное переключение на дополнительные символы</p>
+	<p class="list-group-item-text">shift + пробел — переключить язык на следующий</p>
+	<a " class="list-group-item"><h4 class="list-group-item-heading">также возможна комбинация горячих клашив, пример: shift + ctrl + alt - - - переключение на дополнительные прописные символы</h4></a>
+      </a>
+      <a " class="list-group-item"><h4 class="list-group-item-heading">функциональные клавиши на наэкранной клавиатуре:</h4>
+	<p class="list-group-item-text">close — отключить виртуальную клавиатуру</p>
+	<p class="list-group-item-text">minimize — скрыть наэкранную клавитуру</p>
+	<p class="list-group-item-text">shift</p>
+	<p class="list-group-item-text">caps lock</p>
+	<p class="list-group-item-text">addit — shift-подобное переключение на дополнительные символы</p>
+	<p class="list-group-item-text">additLong — caps-подобное переключение на дополнительные символы</p>
+	<p class="list-group-item-text">space</p>
+	<p class="list-group-item-text">backspace</p>
+	<p class="list-group-item-text">delete</p>
+	<p class="list-group-item-text">enter</p>
+	<p class="list-group-item-text">следующий язык</p>
+      </a>
+      <a " class="list-group-item"><h4 class="list-group-item-heading">наэкранная клавиатура перетаскиваемая</h4></a>
+    </div>
+    
+    <h1>Текущие проблемы. Требуется помошь</h1>
+    <div class="panel panel-default">
+      <div class="panel-body">
+	<p>После обновлений Firefox'а свойство event.keyCode больше не работает с некотырыми клавишами. Я <a href='https://forums.mozilla.org/viewtopic.php?f=27&t=23447'>описал</a> эту проблему на английском на форуме Firefox. Свойство event.keyCode возвращает код нажатой клавиши. Например: если ввести 'q', то свойство возвращает 81 и если ввести 'й', то опять будет 81, что мне и надо. Но если ввести '[', то свойство возрватит 219, а если ввести русскую 'х', то будет возвращано 0.</p>
+	<p>В Firefox`е при написании письма на gmail.com нажатия физических клавиш не определяются.</p>
+      </div>
+    </div>
+
+    
+    <h1>Список задач</h1>
+      <div class="list-group">
+	<a " class="list-group-item"><h4 class="list-group-item-heading">Chrome:</h4>
+	  <p>добавить меню на строке браузера</p>
+	  <p>сохрание настроек клавиатуры: текущий язык, показана ли наэкранная клавиатура, включена ли клавиатура</p>
+	</a>
+	<a " class="list-group-item"><h4 class="list-group-item-heading">Chrome and Firefox:</h4>
+	  <p>сделать возможным вкл/выкл перехвата нажатий физических клавиш</p>
+	  <p>сделать возможным настраивать языки. Превью страницы настроек</p>
+	</a>
+	<a " class="list-group-item"><h4 class="list-group-item-heading">редизайн</h4></a>
+	<a " class="list-group-item"><h4 class="list-group-item-heading">начать бета-тест</h4></a>
+	  <a " class="list-group-item"><h4 class="list-group-item-heading">сделать локализации</h4>
+	  <p>на английский, русский, башкирский и другии языки, если кто-нибудь попросит</p>
+	</a>
+	<a " class="list-group-item"><h4 class="list-group-item-heading">дебаг</h4><a>
+	<a " class="list-group-item"><h4 class="list-group-item-heading">конфертировать расширение для Chrome на Opera и Яндекс Браузер</h4><a>
+
+    
+    
+    
+    
+    
+    
+  </div>
+  <script src="libs/jquery.js"></script>
+  <script src="libs/resslider/responsiveslides.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
