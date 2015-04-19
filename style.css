@@ -1,3 +1,18 @@
 body{
   padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+.row{
+	max-width: 960px;
+	margin: auto;
+}
+.col-md-6{
+	text-align: center;
+	padding: 15px;
+}
+.img{
+	height: 300px;
+	width: 400px;
 }

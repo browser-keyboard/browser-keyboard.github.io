@@ -4,86 +4,43 @@
   <title>Browser Keyboard</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="libs/superhero.css" rel="stylesheet">
-  <link rel="stylesheet" href="libs/resslider/responsiveslides.css">
+  <link href="libs/paper.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<a href="https://github.com/browser-keyboard/keyboard"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
   <div class="container">
     <div class="jumbotron">
       <h1>Browser Keyboard</h1>
       <p>Virtual keyboard extensoin for Firefox and Chrome.</p>
-      <p><a class="btn btn-primary info btn-lg" href="https://github.com/browser-keyboard/keyboard">View on GitHub</a></p>
-      <p><a class="btn btn-primary info btn-lg" href="demo/index.html">View Demo</a></p>
-      <p><a class="btn btn-primary info btn-lg" href="https://chrome.google.com/webstore/detail/browser-keyboardalpha/fkbfahodmkmnemdhcnejmafailmahkkp?hl=ru">Chrome alpha test</a></p>
+      <a class="btn btn-info info btn-lg" href="demo/index.html">Demo</a>
+      <a class="btn btn-info info btn-lg" href="demo/index.html">User Manual</a>
+      <a class="btn btn-info info btn-lg" href="https://chrome.google.com/webstore/detail/browser-keyboardalpha/fkbfahodmkmnemdhcnejmafailmahkkp?hl=ru">Chrome</a>
     </div>
-    <div class="rslides_container">
-      <ul class="rslides" id='slider'>
-	<li><img src="images/1.png" alt=""></li>
-	<li><img src="images/2.png" alt=""></li>
-	<li><img src="images/3.png" alt=""></li>
-      </ul>
-    </div>
-  <h1>Features</h1>
-    <div class="list-group">
-      <div class="list-group-item"><h4 class="list-group-item-heading">convert physical key press to extensoin layout symbols</h4></div>
-      <div class="list-group-item"><h4 class="list-group-item-heading">type text by on-screen keyboard</h4></div>
-      <div class="list-group-item"><h4 class="list-group-item-heading">choose diferent languages behind system settings</h4></div>
-      <div class="list-group-item"><h4 class="list-group-item-heading">hide/show on-screen keyboard however extension will continue to covert physical key press</h4></div>
-      <div class="list-group-item"><h4 class="list-group-item-heading">turn on/off auto keyboard capturing</h4></div>
-      <div class="list-group-item"><h4 class="list-group-item-heading">language list is downloaded from server on resetting enxention languages by AJAX</h4></div>
-      <div class="list-group-item"><h4 class="list-group-item-heading">lowercase, uppercase, additional lowercase and additional uppercase symbols sets</h4></div>
-      <div class="list-group-item"><h4 class="list-group-item-heading">popum menu:</h4>
-	<p class="list-group-item-text">switching on/off virtual keyboard</p>
-	<p class="list-group-item-text">hide/show on-screen keyboard</p>
-	<p class="list-group-item-text">change current language</p>
-      </div>
-      <div class="list-group-item"><h4 class="list-group-item-heading">hot keys:</h4>
-	<p class="list-group-item-text">ctrl+k — switching on/off virtual keyboard</p>
-	<p class="list-group-item-text">shift</p>
-	<p class="list-group-item-text">caps lock</p>
-	<p class="list-group-item-text">ctrl + alt — shift-like switch symbols set to additional letters</p>
-	<p class="list-group-item-text">ctrl + alt + space — caps-like switch symbols set to additional letters</p>
-	<p class="list-group-item-text">shift + space — change language layout to next</p>
-	<div class="list-group-item"><h4 class="list-group-item-heading">also able to combinate hot keys, ex: shift + ctrl + alt — switch symbols set to additional uppercase letters</h4></div>
-      </div>
-      <div class="list-group-item"><h4 class="list-group-item-heading">functional buttons on on-screen keyboard:</h4>
-	<p class="list-group-item-text">close — turn off virtual keyboard</p>
-	<p class="list-group-item-text">minimize — hide on-screen keyboard</p>
-	<p class="list-group-item-text">shift</p>
-	<p class="list-group-item-text">caps lock</p>
-	<p class="list-group-item-text">addit — shift-like switch symbols set to additional letters</p>
-	<p class="list-group-item-text">additLong — caps-like switch symbols set to additional letters</p>
-	<p class="list-group-item-text">space</p>
-	<p class="list-group-item-text">backspace</p>
-	<p class="list-group-item-text">delete</p>
-	<p class="list-group-item-text">enter</p>
-	<p class="list-group-item-text">next language</p>
-      </div>
-      <div class="list-group-item"><h4 class="list-group-item-heading">on-screen keyboard is dragable</h4></div>
-    </div>
-        
-    <h1>TODO</h1>
-      <div class="list-group">
-	<div class="list-group-item"><h4 class="list-group-item-heading">Firefox:</h4>
-	  <p>make able to turn on/off keyboard capturing</p>
-	<div class="list-group-item"><h4 class="list-group-item-heading">redesign</h4></div>
-	<div class="list-group-item"><h4 class="list-group-item-heading">start beta-test</h4></div>
-	  <div class="list-group-item"><h4 class="list-group-item-heading">make localization</h4>
-	  <p>for English, Russian, Bashkir and else languages if somebody ask</p>
-	</div>
-	<div class="list-group-item"><h4 class="list-group-item-heading">debug</h4></div>
-	<div class="list-group-item"><h4 class="list-group-item-heading">convert Chrome extinsion to Opera and Yandex Browser</h4></div>
-
-    
-    
-    
-    
-    
-    
   </div>
+	<div class="row">
+		<div class="col-md-6">
+			<div>
+				<h4>On-Screen Keyboard</h4>
+				<img class="img" src="images/onscreen.png">
+			</div>
+		</div>
+		<div class="col-md-6">
+			<h4>Keyboard Capturing</h4>
+			<img class="img" src="images/capture.jpg">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<h4>Different Languages</h4>
+			<img class="img" src="images/languages.png">
+		</div>
+		<div class="col-md-6">
+			<h4>Different Options</h4>
+			<img class="img" src="images/options.png">
+		</div>
+	</div>
   <script src="libs/jquery.js"></script>
-  <script src="libs/resslider/responsiveslides.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
