@@ -22,6 +22,11 @@ $(function(){
 	  $('html').on('keydown', "body", function(e){
 	  	virtualKeyboard.keyDown(e);
 	  });
+	  
+	  $('html').on('keypress', "body", function(e){
+	  	console.log(e);
+	  });
+	  
 	  $('html').on('keyup', "body", function(e){
 	  	virtualKeyboard.keyUp(e);
 	  });

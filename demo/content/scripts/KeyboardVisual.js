@@ -6,6 +6,8 @@ $(function(){
 		var that = this;
 		
     this.container = $('<div id=\'keyboardDiv\'></div>');
+		this.container.attr('size', 'standart');
+		this.container.attr('color', 'white');
 
     var dragger = $('<div id=\'keyboardDragger\'></div>');
     this.languageTitle = $('<div id=\'languageTitle\'></div>');
@@ -19,7 +21,7 @@ $(function(){
     
     var controlsDiv = $('<div id=\'controlsDiv\'></div>');
     var minimControl = $('<div id=\'minimize\'></div>');
-    var closeControl = $('<div id=\'close\'></div>');
+    var closeControl = $('<div id=\'close\'>F</div>');
     minimControl.click(function(){
     	that.minimize();
     });

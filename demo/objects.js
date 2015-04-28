@@ -122,15 +122,15 @@ $(function(){
     ]
 
   }
-
+ 
   var keyBackspace = {
   	func: 'keyBackspace',
-  	title: 'backspace',
+  	title: 'A',
   	code: 8
   }
   var keyCaps = {
 		func: 'keyCaps',
-		title: 'Caps Lock'
+		title: 'D'
   }
   var keyNextLanguage = {
 		func: 'keyNextLanguage',
@@ -143,20 +143,15 @@ $(function(){
   }
   var keyAddit = {
 		func: 'keyAddit',
-		title: 'Ctrl + Alt'
-  }
-  var keyLongCtrlAlt = {
-		func: 'keyLongCtrlAlt',
-		title: 'Ctrl + Alt + Space',
-  	code: 0
+		title: '!@#$'
   }
   var keyShift = {
 		func: 'keyShift',
-		title: 'Shift'
+		title: 'C'
 	}
   var keyEnter = {
 		func: 'keyEnter',
-		title: 'Enter',
+		title: 'F',
   	code: 13
   }
   var keyShiftEnter = {
@@ -166,13 +161,13 @@ $(function(){
   
   var keyDelete = {
 		func: 'keyDelete',
-		title: 'Delete',
+		title: 'B',
   	code: 46
   };
 
   var keyAdditLong = {
   	func: 'keyAdditLong',
-  	title: 'Ctrl+Alt+space'
+  	title: '!@#$'
   };
   
   var comboAdditLong = {
@@ -212,6 +207,7 @@ $(function(){
   	func: 'keyAddit'
   };
 
+
   keyboardOption = {
     languageSet: [englishLayoat, bashkirLayoat],
 
@@ -219,7 +215,7 @@ $(function(){
       ['layout', keyBackspace],
       ['layout', keyDelete],
       [keyCaps, 'layout', keyEnter ],
-      [keyShift, 'layout', keyShiftEnter],
+      [keyShift, 'layout', keyShift],
       [keyNextLanguage, keySpace, keyAddit, keyAdditLong]
     ],
     keyCodes: keyCodes,

@@ -39,6 +39,9 @@ $(function(){
     	virtualKeyboard.keyUp(e);
   	}
   });
+  $('html').on('keypress', "body", function(e){
+    console.log(e);
+  });
   $(window).blur(function(){
   	virtualKeyboard.browserBlur();
   });
