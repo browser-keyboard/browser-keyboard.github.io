@@ -52,7 +52,7 @@ $(function(){
 
   setInterval(function(){
   	for(var i = 0; i < window.frames.length ; i++){
-			if(!window.frames[i].keyboardConnect){
+			if(window.frames[i] && !window.frames[i].keyboardConnect){
 				window.frames[i].keyboardConnect = true;
 
 				content = $(window.frames[i].document).contents().find('body').parent();

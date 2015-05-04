@@ -21,7 +21,7 @@ $(function(){
     
     var controlsDiv = $('<div id=\'controlsDiv\'></div>');
     var minimControl = $('<div id=\'minimize\'></div>');
-    var closeControl = $('<div id=\'close\'>F</div>');
+    var closeControl = $('<div id=\'close\'>E</div>');
     minimControl.click(function(){
     	that.minimize();
     });
@@ -40,7 +40,6 @@ $(function(){
     });
     
     dragger.appendTo(this.container);
-    this.container.draggable({handle: dragger, containment: "window" });
     
   	var keyWordCount = 0;
   	var keyFunctionalCount = 0;
@@ -78,7 +77,16 @@ $(function(){
 			this.visual.append(line);
 		}
 		this.container.append(this.visual);
-    this.container.appendTo('body');	
+    this.container.prependTo('html');	
+		this.container.pep({
+			handle: dragger, 
+			shouldEase: false,
+			constrainTo: 'window',
+			startPos:{
+				left: $(window).width() - this.container.width() - 25,
+				top: $(window).height() - this.container.height() - 25
+			}
+		});
     
     this.setLanguageTitles(0);
   	

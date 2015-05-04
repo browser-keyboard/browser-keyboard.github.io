@@ -1,18 +1,153 @@
-body{
-  padding-top: 50px;
-  padding-bottom: 50px;
+@font-face {
+	font-family: 'browserIconfont';
+	src:	url('libs/fonts/browserIconfont.ttf');
+	font-weight: normal;
+	font-style: normal;
 }
 
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'browserIconfont';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-uniE840, .icon-uniE841, .icon-uniE842, .icon-uniE843, .icon-safari {
+	font-family: 'browserIconfont';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-uniE840:before {
+	content: "\e840";
+}
+.icon-uniE841:before {
+	content: "\e841";
+}
+.icon-uniE842:before {
+	content: "\e842";
+}
+.icon-uniE843:before {
+	content: "\e843";
+}
+.icon-safari:before {
+	content: "\e00f";
+}
+
+
+#browser-links a{
+	font-size: 29px;
+	color: #fff;
+}
+
+.block{
+	padding-top: 45px;
+	padding-bottom: 45px;
+}
 
 .row{
 	max-width: 960px;
 	margin: auto;
 }
-.col-md-6{
-	text-align: center;
-	padding: 15px;
-}
 .img{
 	height: 300px;
 	width: 400px;
+}
+
+.navbar{
+	margin-bottom: 0;
+}
+
+#navbarCollapse{
+  overflow: hidden;
+}
+
+#divtop{
+/* 	background: #4E5D6C; */
+	background: url(http://subtlepatterns.com/patterns/footer_lodyas.png);
+	color: #fff !important;
+}
+
+#description{
+	font-size: 19px;
+/* 		text-align: center; */
+}
+#image-ontop{
+    max-width:100%;
+    height: auto;
+}
+#manual{
+	max-width: 100%;
+}
+.features{
+/* 	background: #4E5D6C; */
+	background: url(http://subtlepatterns.com/patterns/footer_lodyas.png);
+	color: #fff !important;
+}
+
+.features img{
+	max-width: 100%;
+	height: auto;
+}
+
+.col-center{
+	padding: 15px;
+	text-align: center;
+}
+.navbar{
+	border-radius: 0;
+/* 	background: #1F3142; */
+	background: #000;
+}
+.navbar a:hover{
+	color: #ccc !important;
+}
+.navbar a:focus{
+	color: #fff !important;
+}
+#footer{	
+/* 	background: #1F3142; */
+	background: #000;
+	padding: 15px;
+}
+#footer div{
+	max-width: 960px;
+	margin: auto;
+	color: #fff;
+}
+
+#layoutsList{
+	-webkit-column-width: 150px; /* Chrome, Safari, Opera */
+	-moz-column-width: 150px; /* Firefox */
+	column-width: 150px;
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+#layoutsList li{
+	margin: 7px;
+	letter-spacing: 2px;
+}
+
+@media screen and (min-width: 890px) {
+
+.col-center{
+	text-align: left;
+}
 }
