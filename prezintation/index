@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+		<link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+		<div id="back"></div>
+		<div id="impress">
+			<div class="step slide" data-x="0" data-y=0>
+				<div id="first-page" class='page'>
+					<h2>Виртуальная клавиатура для браузеров</h2>
+					<img src="images/black-keyboard.png">
+				</div>
+			</div>
+			
+			<!-- Опрос -->
+			<div style="position: absolute; left: 2000px; top: 0" data-scale="2">
+				<div><img class="img-page" src="images/stats2.png" ></div>
+			</div>
+			<div class="step slide" data-x="3419" data-y="1065" data-scale="3"></div>
+			<div class="step slide" data-x="4492" data-y="801" data-scale="0.8"></div>
+			<div class="step slide" data-x="2356" data-y="1333" data-scale="0.8"></div>
+			<div class="step slide" data-x="3780" data-y="1333" data-scale="0.8"></div>
+		
+		
+		
+			<!-- Языки РФ -->
+			<div class="step slide" data-x="6000" data-y="0">
+				<div class='page' id='supported'>
+					<h2>Языки в РФ, поддерживаемые Windows 8</h2>
+					<ul>
+						<li>Башкирский язык</li>
+						<li>Русский язык</li>
+						<li>Татарский язык</li>
+						<li>Украинский язык</li>
+						<li>Язык саха</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="step slide" data-x="6000" data-y="1500">
+				<div class='page' id='unsupported'>
+					<h2>Языки РФ, не поддерживаемые Windows 8</h2>
+					<ul>
+						<li>Язык саха</li>
+						<li>Абазинский язык</li>
+						<li>Адыгейский язык</li>
+						<li>Алтайский язык</li>
+						<li>Бурятский язык</li>
+						<li>Ингушский язык</li>
+						<li>Черкесский язык</li>
+						<li>Калмыцкий язык</li>
+						<li>Карачаево-балкарский язык</li>
+						<li>Язык коми</li>
+						<li>Крымско-татарский язык</li>
+						<li>Марийский язык</li> 
+					</ul>
+					<ul>
+						<li>Мокшанский язык</li>
+						<li>Ногайский язык</li>
+						<li>Осетинский язык</li>
+						<li>Тувинский язык</li>
+						<li>Удмуртский язык</li>
+						<li>Хакасский язык</li>
+						<li>Чеченский язык</li>
+						<li>Чувашский язык</li>
+						<li>Эрзянский язык</li>
+						<li>Языки Дагестана</li>
+					</ul>
+				</div>
+			</div>
+		
+		
+			<!-- Цели и задачи -->
+			<div class="step slide" data-x="7500" data-y="0">
+				<div class='page' id='target'>
+					<h2>Цель</h2>
+					<p>Разработка инструмента текстового ввода для замены раскладки клавиатуры операционной системы</p>
+				</div>
+			</div>
+			
+			<div class="step slide" data-x="7500" data-y="1500">
+				<div class='page' id='thinks'>
+					<h2>Сценарии использования</h2>
+					<ul class="rhombus">
+						<li>Сенсорный экран</li>
+						<li>Раскладки, которых нет в операционной системе</li>
+						<li>Редкоиспользуемые раскладки</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="step slide" data-x="7500" data-y="3000">
+				<div class='page' id='tasks'>
+					<h2>Задачи</h2>
+					<ul class="rhombus">					
+						<li>Провести анализ предметной области</li>
+						<li>Разработать алгоритм решения поставленной задачи</li>
+						<li>Разработать скрипт виртуальной клавиатуры</li>
+						<li>Внедрить JavaScript код в веб-браузер в качестве расширения</li>
+						<li>Выполнить тестирование</li>
+						<li>Создание формы связи разработчиков и пользователей для нахождения ошибок и добавления новых раскладок</li>
+					</ul>
+				</div>
+			</div>
+			
+
+			<!-- Возможности -->
+			<div class="step slide" data-x="9000" data-y="3000">
+				<div class='page' id="browsers">
+					<img src="images/browsers.png">
+				</div>
+			</div>
+			<div class="step slide" data-x="9000" data-y="4500">
+				<div class='page features'>
+					<h2>Выбор разных раскладок, вне зависимости от системных настроек</h2>
+					<img src="images/languages.png">
+				</div>
+			</div>
+			<div class="step slide" data-x="9000" data-y="6000">
+				<div class='page features'>
+					<h2>Печать текста с помощью экранной клавиатуры</h2>
+					<img src="images/onscreen.png">
+				</div>
+			</div>
+			<div class="step slide" data-x="9000" data-y="7500">
+				<div class='page features'>
+					<h2>Перехват нажатий на физической клавиатуре и печать соответствующего символа</h2>
+					<img src="images/capture.jpg">
+				</div>				
+			</div>
+		
+			<div class="step slide" data-x="9000" data-y="9000">
+				<div class='page' id='other'>
+					<h2>Прочие возможности</h2>
+					<ul class="rhombus">
+						<li>Скачивание языков с сервера</li>
+						<li>Горячие клавиши</li>
+						<li>Перетаскиваемая клавиатура (drag and drop)</li>
+						<li>Возможность вкл/выкл клавиатуры прямо на странице</li>
+						<li>Понятный пользовательский интерфейс</li>
+						<li>Две цветовые схемы и три размера экранной клавиатуры</li>
+					</ul>
+				</div>
+			</div>
+		
+			<!-- Демо -->
+			<div style="position: absolute; left: 11000px; top: 9000px" data-scale="2">
+				<div><img class="img-page" src="images/demo.png" ></div>
+			</div>
+			<div class="step slide" data-x="11632" data-y="9406" data-scale="1.2"></div>
+			<div class="step slide" data-x="12000" data-y="9706" data-scale="0.5"></div>
+			<div class="step slide" data-x="11632" data-y="9406" data-scale="0.7"></div>
+			<div class="step slide" data-x="12000" data-y="9206" data-scale="0.5"></div>
+			
+			<!-- Опции -->
+			<div style="position: absolute; left: 13000px; top: 9000px" data-scale="2">
+				<div><img class="img-page" src="images/options.png" ></div>
+			</div>
+			<div class="step slide" data-x="13632" data-y="9406" data-scale="1.4"></div>
+			<div class="step slide" data-x="13400" data-y="9206" data-scale="0.6"></div>
+			<div class="step slide" data-x="13800" data-y="9206" data-scale="0.6"></div>
+			<div class="step slide" data-x="13632" data-y="9506" data-scale="0.8"></div>
+			<div class="step slide" data-x="13632" data-y="9406" data-scale="1.4"></div>
+		
+		
+		<!-- Сайт -->
+			<div style="position: absolute; left: 15000px; top: 9000px" data-scale="2">
+				<div><img class="img-page" src="images/site.png" ></div>
+			</div>
+			<div class="step slide" data-x="15541" data-y="9902" data-scale="2.4"></div>
+			<div class="step slide" data-x="15541" data-y="9406" data-scale="1"></div>
+			<div class="step slide" data-x="15541" data-y="9536" data-scale="0.7"></div>
+			
+		<!-- Планы -->
+			<div class="step slide" data-x="15541" data-y="11500">
+				<div class='page' id='future'>
+					<h2>Планы</h2>
+					<ul class="rhombus">
+						<li>Портирование под Firefox и Safari</li>
+						<li>Добавление других языковых раскладок</li>
+						<li>Исправление ошибок</li>
+					</ul>
+				</div>
+			</div>
+			
+			
+		</div>
+	
+	
+	
+		<script src="impress.js"></script>
+		<script>impress().init();</script>
+	</body>
+</html>
