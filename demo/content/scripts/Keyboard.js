@@ -213,7 +213,7 @@ $(function(){
   Keyboard.prototype.keyDown = function(event){
   	/*if(!this.field.active)
   		return;  */
-  	var code = event.keyCode;
+  	var code = event.originalEvent.code;
   	var isHappened = false;
 		for(var i = this.keyHots.length-1; i > -1 ; i--){
 			if(this.checkKeyHot(event, this.keyHots[i], code, "down")){

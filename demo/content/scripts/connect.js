@@ -28,7 +28,7 @@ $(function(){
 		if(!virtualKeyboard.active)
 			return;
   	virtualKeyboard.keyDown(e);
-	console.log(e);
+		console.log(e.originalEvent.code);
   });
   $('html').on('keyup', "body", function(e){
   	if(e.ctrlKey && e.keyCode == 77){
@@ -38,9 +38,6 @@ $(function(){
   			return;
     	virtualKeyboard.keyUp(e);
   	}
-  });
-  $('html').on('keypress', "body", function(e){
-    console.log(e);
   });
   $(window).blur(function(){
   	virtualKeyboard.browserBlur();
