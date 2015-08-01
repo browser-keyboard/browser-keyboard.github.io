@@ -25,4 +25,9 @@
 			"name" : "Татар",
 			"shortName": "tat"
 		}  
+		{
+			"id": 6,
+			"name" : "Српски (ћирилица)",
+			"shortName": "ser"
+		}  
 ]

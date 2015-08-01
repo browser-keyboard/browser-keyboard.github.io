@@ -79,7 +79,7 @@ you can use the generic selector below, but it's slower:
 
 #divtop{
 /* 	background: #4E5D6C; */
-	background: url(http://subtlepatterns.com/patterns/footer_lodyas.png);
+	background: url(images/footer_lodyas.png);
 	color: #fff !important;
 }
 
@@ -96,7 +96,7 @@ you can use the generic selector below, but it's slower:
 }
 .features{
 /* 	background: #4E5D6C; */
-	background: url(http://subtlepatterns.com/patterns/footer_lodyas.png);
+	background: url(images/footer_lodyas.png);
 	color: #fff !important;
 }
 
