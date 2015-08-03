@@ -28,7 +28,6 @@ $(function(){
 		if(!virtualKeyboard.active)
 			return;
   	virtualKeyboard.keyDown(e);
-		console.log(e.originalEvent.code);
   });
   $('html').on('keyup', "body", function(e){
   	if(e.ctrlKey && e.keyCode == 77){
@@ -46,6 +45,18 @@ $(function(){
   $(window).focus(function(){
   	virtualKeyboard.browserFocus();
   });
+	
+	$(window).on('resize',function(){
+		var con = virtualKeyboard.visual.container;
+		var top = con.position().top;
+		var left = con.position().left;
+		if((top + con.height() > $(window).height())){
+			con.data('plugin_pep').yToBorder();
+		}
+		if((left + con.width() > $(window).width())){
+			con.data('plugin_pep').xToBorder();
+		}
+	});
 
   setInterval(function(){
   	for(var i = 0; i < window.frames.length ; i++){

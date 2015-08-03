@@ -8,9 +8,9 @@ $(function(){
 		
 		
 	// create hotkey combinations
-		this.keyHots = [];
+		this.hotKeys = [];
   	for (var i = 0; i < options.combos.length; i++){
-  		this.keyHots[i] = new KeyHot(this, options.combos[i]);
+  		this.hotKeys[i] = new KeyHot(this, options.combos[i]);
   	}
   	
 /*****  create keys logic  *****/
@@ -211,19 +211,17 @@ $(function(){
 
 //*******Physical Key Actions******************************************************
   Keyboard.prototype.keyDown = function(event){
-  	/*if(!this.field.active)
-  		return;  */
-  	var code = event.originalEvent.code;
+  	var code = event.keyCode;
   	var isHappened = false;
-		for(var i = this.keyHots.length-1; i > -1 ; i--){
-			if(this.checkKeyHot(event, this.keyHots[i], code, "down")){
-				if(!this.keyHots[i].thisSesson){
-					if(this.keyHots[i].when == 'down')
-						this.keyHots[i].active = !this.keyHots[i].active;
+		for(var i = this.hotKeys.length-1; i > -1 ; i--){
+			if(this.checkKeyHot(event, this.hotKeys[i], code, "down")){
+				if(!this.hotKeys[i].thisSesson){
+					if(this.hotKeys[i].when == 'down')
+						this.hotKeys[i].active = !this.hotKeys[i].active;
 					else
-						this.keyHots[i].active = true;
-					this.keyHots[i].action("down");
-					this.keyHots[i].thisSesson = true;
+						this.hotKeys[i].active = true;
+					this.hotKeys[i].action("down");
+					this.hotKeys[i].thisSesson = true;
 				}
 				isHappened =  true;
 			}
@@ -262,22 +260,20 @@ $(function(){
   };  
 
   Keyboard.prototype.keyUp = function(event){
-  	/*if(!this.field.active)
-  		return;*/
 		var code = event.keyCode;
 		var isHappened = false;
-		for(var i = this.keyHots.length-1; i > -1 ; i--){
-			if(this.checkKeyHot(event, this.keyHots[i], code, "upNoAction")){
-				if(this.keyHots[i].when == 'down'){
-					this.keyHots[i].active = false;
+		for(var i = this.hotKeys.length-1; i > -1 ; i--){
+			if(this.checkKeyHot(event, this.hotKeys[i], code, "upNoAction")){
+				if(this.hotKeys[i].when == 'down'){
+					this.hotKeys[i].active = false;
 				}
 			}
-			if(this.checkKeyHot(event, this.keyHots[i], code, "up")){
-					this.keyHots[i].action("up");
-					this.keyHots[i].active = false;
+			if(this.checkKeyHot(event, this.hotKeys[i], code, "up")){
+					this.hotKeys[i].action("up");
+					this.hotKeys[i].active = false;
 					isHappened =  true;
 			}
-			this.keyHots[i].thisSesson = false;			
+			this.hotKeys[i].thisSesson = false;			
 		}
 		
 		
@@ -292,10 +288,6 @@ $(function(){
   			this.keyFunctionals[i].visual.up();
   		};
   	}
-	/*	if(isHappened){ 	
-	    event.preventDefault();  //prevent default DOM action
-	//    event.stopPropagation();   //stop bubbling
-		}*/
   }
   
   Keyboard.prototype.checkKeyHot = function(event, keyHot, code, downOrUp){
@@ -366,15 +358,15 @@ $(function(){
   	var ctrl = false;
   	var shift = false;
   	var alt = false;
-  	for(var i = this.keyHots.length-1; i > -1 ; i--){
-  		if(this.keyHots[i].active){
-  			if (this.keyHots[i].alt){
+  	for(var i = this.hotKeys.length-1; i > -1 ; i--){
+  		if(this.hotKeys[i].active){
+  			if (this.hotKeys[i].alt){
   				alt = true;
   			}
-  			if (this.keyHots[i].ctrl){
+  			if (this.hotKeys[i].ctrl){
   				ctrl = true;
   			}
-  			if (this.keyHots[i].shift){
+  			if (this.hotKeys[i].shift){
   				shift = true;
   			}
   		}
