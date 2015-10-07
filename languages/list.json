@@ -49,5 +49,20 @@
 			"id": 10,
 			"name" : "Portuguese",
 			"shortName": "pt"
+		},
+		{
+			"id": 11,
+			"name" : "Марий",
+			"shortName": "ma"
+		},
+		{
+			"id": 12,
+			"name" : "Коми",
+			"shortName": "ko"
+		},
+		{
+			"id": 13,
+			"name" : "Esperanto",
+			"shortName": "esp"
 		}
 ]
