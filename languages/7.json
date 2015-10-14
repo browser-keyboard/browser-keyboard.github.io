@@ -1,12 +1,12 @@
 {
   "id": 7,
 	"name" : "Srpski",
-    "shortName": "srp",
+    "shortName": "srb",
     "letterSet" : [
       [
 	        [{}, "`", "~","",""],
 	        [{"caps": false}, "1", "!","~"],
-	        [{"caps": false}, "2", """","ˇ"],
+	        [{"caps": false}, "2", "","ˇ"],
 	        [{"caps": false}, "3", "#","^"],
 	        [{"caps": false}, "4", "$","˘"],
 	        [{"caps": false}, "5", "%","°"],
