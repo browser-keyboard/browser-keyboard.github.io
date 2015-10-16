@@ -4,11 +4,10 @@
   <title>Browser Keyboard</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-  <link href="libs/flatly.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
-  <script src="libs/jquery.js"></script>
-  <script src="script.js"></script>
+  <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+  <link href="../libs/flatly.css" rel="stylesheet">
+  <link href="../style.css" rel="stylesheet">
+  <script src="../libs/jquery.js"></script>
 </head>
 <body>
 
@@ -21,19 +20,19 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 			</button>
-      <a class="navbar-brand" href="#">Browser Keyboard</a>
+      <a class="navbar-brand" href="../en/">Additional Keyboard Symbols</a>
     </div>
 
     <div id="navbarCollapse" class="collapse navbar-collapse">
 
       <ul class="nav navbar-nav navbar-right">
-        <li><a class="navbar-brand" href="additional">Additional Keyboard Symbols</a></li>
+        <li><a href="../additional/">Browser Keyboard</a></li>
 				<li><ul class="nav navbar-nav">
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Language<span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
 							<li><a href="#">English</a></li>
-							<li><a href="ru/index.html">Русский</a></li>
+							<li><a href="../ru/additional/">Русский</a></li>
 						</ul>
 					</li>
 				</ul></li>
@@ -49,14 +48,14 @@
 	<div class="row" >
 		<div class="col-md-6 .col-xs-6">
 			<div id="description">
-				<p>Open source virtual keyboard extensoin for browsers</p>
-				<img id="image-ontop" src="images/top.png">
+        <!--<iframe width="420" height="250"src="http://www.youtube.com/embed/sWwd5vks9n8"></iframe>-->
+				<img id="image-ontop" src="../images/demo.png">
 			</div>
 		</div>
 		<div class="col-md-6 .col-xs-6">
 			<div id="browser-links">
-				<h4><a href="../demo-webkit/index.html">Webkit Demo</a></h4>
-				<h4><a href="../demo-firefox/index.html">Firefox Demo</a></h4><h4><a href="https://chrome.google.com/webstore/detail/fkbfahodmkmnemdhcnejmafailmahkkp"><span class="fs1" aria-hidden="true" data-icon="&#xe841;"></span> Chrome</a></h4>
+				<h4>Additional custom keyboard symbols extensoin for browsers</h>
+				<h4><a href="https://chrome.google.com/webstore/detail/fkbfahodmkmnemdhcnejmafailmahkkp"><span class="fs1" aria-hidden="true" data-icon="&#xe841;"></span> Chrome</a></h4>
 				<h4><a href="https://addons.mozilla.org/en-US/firefox/addon/browser-keyboard/"><span class="fs1" aria-hidden="true" data-icon="&#xe840;"></span> Firefox</a></h4>
 				<h4><a href="https://addons.opera.com/en/extensions/details/browser-keyboardbeta/"><span class="fs1" aria-hidden="true" data-icon="&#xe842;"></span> Opera</a></h4>
 			</div>
@@ -68,55 +67,18 @@
 
 
 	<div class="row block" >
-		<img src="images/en.png"class="manual">
+    <h2>Default Set for Ctrl + Alt + Key</h2>
+		<img src="../images/keyboardA.png" class="manual">
 	</div>
 
-
-
-
-<div class="features block">
-	<div class="row ">
-		<div class="col-md-6 col-center">
-			<div>
-				<h4>On-Screen Keyboard</h4>
-				<img class="img" src="images/onscreen.png">
-			</div>
-		</div>
-		<div class="col-md-6 col-center">
-			<h4>Keyboard Capturing</h4>
-			<img class="img" src="images/capture.jpg">
-		</div>
+	<div class="row block" >
+    <h2>Default Set for Ctrl + Alt + Shift + Key</h2>
+		<img src="../images/keyboardB.png" class="manual">
 	</div>
-	<div class="row">
-		<div class="col-md-6 col-center">
-			<h4>Different Layouts</h4>
-			<img class="img" src="images/languages.png">
-		</div>
-		<div class="col-md-6 col-center">
-			<h4>Different Options</h4>
-			<img class="img" src="images/options.png">
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-6 col-center">
-			<h4>Two color sceme</h4>
-			<img class="img" src="images/colors.png">
-		</div>
-		<div class="col-md-6 col-center">
-			<h4>Tree sizes</h4>
-			<img class="img" src="images/sizes.png">
-		</div>
-	</div>
-</div>
 
-<div id="footer" class='block'>
-	<div>
-		<p>Enable Layouts:</p>
-		<ul id='layoutsList'>
-		</ul>
-	</div>
-</div>
-
+  <div id="footer" class='block emoji'>
+    <div class="emoji"></div>
+  </div>
 	<!-- Modal -->
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
@@ -136,7 +98,6 @@
 		</div>
 	</div>
 
-  <script src="libs/bootstrap.min.js"></script>
-  <script src="getLayouts.js"></script>
+  <script src="../libs/bootstrap.min.js"></script>
 </body>
 </html>
