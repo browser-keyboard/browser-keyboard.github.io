@@ -69,5 +69,10 @@
 			"id": 14,
 			"name" : "Dansk",
 			"shortName": "da"
+		},
+		{
+			"id": 15,
+			"name" : "Український",
+			"shortName": "ua"
 		}
 ]
