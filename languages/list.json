@@ -69,5 +69,35 @@
 			"id": 14,
 			"name" : "Dansk",
 			"shortName": "da"
+		},
+		{
+			"id": 15,
+			"name" : "Український",
+			"shortName": "ua"
+		},
+		{
+			"id": 16,
+			"name" : "Беларуская",
+			"shortName": "be"
+		},
+		{
+			"id": 17,
+			"name" : "Азәрбајҹан",
+			"shortName": "az"
+		},
+		{
+			"id": 18,
+			"name" : "Eesti",
+			"shortName": "et"
+		},
+		{
+			"id": 19,
+			"name" : "հայերէն",
+			"shortName": "arm"
+		},
+		{
+			"id": 20,
+			"name" : "Deutsch",
+			"shortName": "de"
 		}
 ]
