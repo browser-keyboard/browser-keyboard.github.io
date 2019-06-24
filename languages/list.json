@@ -99,5 +99,10 @@
 			"id": 20,
 			"name" : "Deutsch",
 			"shortName": "de"
+		},
+		{
+			"id": 21,
+			"name" : "Kurdî",
+			"shortName": "ku"
 		}
 ]
