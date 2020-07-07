@@ -104,5 +104,10 @@
 			"id": 21,
 			"name" : "Kurdî",
 			"shortName": "ku"
+		},
+		{
+			"id": 22,
+			"name" : "Latvijas",
+			"shortName": "lv"
 		}
 ]
